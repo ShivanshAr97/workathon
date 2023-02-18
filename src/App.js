@@ -6,17 +6,19 @@ import Music from './components/Music';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Celebrations from './components/Celebrations';
+import Main from './Main';
 
 function App() {
   const [people, setPeople] = useState([data])
   return (
     <>
     <Navbar/>
-    <Jokes people={people}/>
+    <Main/>
+    {/* <Jokes people={people}/> */}
     {/* <Games/> */}
-    <Music/>
-    <Skills/>
-    <Celebrations/> 
+    {/* <Music/> */}
+    {/* <Skills/> */}
+    {/* <Celebrations/>  */}
     </>
   );
 }

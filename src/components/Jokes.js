@@ -1,24 +1,44 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import data from '../components/data'
+const Jokes = ({people}) => {
 
-const Jokes = () => {
+    const [count, setCount] = useState("");
+    const [text, setText] = useState([]);
+    const [cnt, setCnt] = useState(0);
 
-    const [name, setName] = useState("")
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let amount = parseInt(count);
 
-    const handleSubmit=(e)=>{
-        e.preventDefault()
-        setName(e.target.value)   
-    }
+        setCnt(cnt+1)
+        var newData = JSON.stringify((data[cnt].joke.toString().replaceAll("boss",(count))));
+        setText(newData);
+        
+    };
     return (
-        <>
-            <form className='border'>
-                <label className='border'>
-                    Enter your boss' name 😈:
-                    <input className='border' type="text" name="username"  onChange={handleSubmit}/>
-                </label>
-                <input type="submit" value="Submit" />
+        <section className='section-center'>
+            <form className='lorem-form' onSubmit={handleSubmit}>
+                <label htmlFor='amount'>Enter your boss' name 😈:</label>
+                <input
+                    type='text'
+                    name='amount'
+                    id='amount'
+                    value={count}
+                    onChange={(e) => setCount(e.target.value)}
+                />
+                <button className='btn'>generate</button>
             </form>
-            {name}
-        </>
+            {people.map((person) => {
+                const { id, joke } = person;
+                return (
+                    <article key={id} >
+                        <div>
+                            <h4>{text}</h4>
+                        </div>
+                    </article>
+                );
+            })}
+        </section>
     )
 }
 

@@ -14,9 +14,9 @@ function App() {
     <Navbar/>
     <Jokes people={people}/>
     {/* <Games/> */}
-    {/* <Music/> */}
-    {/* <Skills/> */}
-    {/* <Celebrations/>  */}
+    <Music/>
+    <Skills/>
+    <Celebrations/> 
     </>
   );
 }

@@ -33,7 +33,7 @@ const Jokes = ({ people }) => {
     return (
         <>
         <div className="confettie-wrap" ref={confetiRef}>
-        <Confetti numberOfPieces={500} width={1200} height={800} recycle={recy}/>
+        <Confetti numberOfPieces={500} width={1200} height={650} recycle={recy}/>
             <h1 className='flex justify-center text-4xl font-semibold mb-2'>Joke</h1>
             <h2 className='flex justify-center text-xl'>Lighten up your mood by taking few laughs at your boss 😈</h2>
             <section className='section-center'>

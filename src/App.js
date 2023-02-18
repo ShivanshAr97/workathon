@@ -12,10 +12,10 @@ function App() {
   return (
     <>
     <Navbar/>
-    {/* <Jokes people={people}/> */}
+    <Jokes people={people}/>
     {/* <Games/> */}
-    <Music/>
-    <Skills/>
+    {/* <Music/> */}
+    {/* <Skills/> */}
     {/* <Celebrations/>  */}
     </>
   );

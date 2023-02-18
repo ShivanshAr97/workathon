@@ -15,7 +15,9 @@ const Jokes = ({ people }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         let amount = parseInt(count);
-
+        if(cnt>5){
+            setCnt(0)
+        }
         
         setCnt(cnt + 1)
         setRecy(true);

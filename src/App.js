@@ -1,9 +1,18 @@
 import React from 'react'
+import Games from './components/Games';
+import Jokes from './components/Jokes';
+import Music from './components/Music';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <>
-    <div className='bg-blue-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit culpa vitae, odio at molestias quam magni tempore tempora eius libero id. Aliquam deserunt soluta, magnam ratione perferendis quos beatae voluptate.</div>
+    <Navbar/>
+    <Jokes/>
+    <Games/>
+    {/* <Music/> */}
+    {/* <Skills/> */}
     </>
   );
 }

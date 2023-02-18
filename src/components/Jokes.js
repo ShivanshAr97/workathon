@@ -34,7 +34,7 @@ const Jokes = ({ people }) => {
         <>
         <div className="confettie-wrap" ref={confetiRef}>
         <Confetti numberOfPieces={500} width={1200} height={650} recycle={recy}/>
-            <h1 className='flex justify-center text-4xl font-semibold mb-2'>Joke</h1>
+            <h1 className='flex justify-center text-4xl mt-8 font-semibold mb-2'>Joke</h1>
             <h2 className='flex justify-center text-xl'>Lighten up your mood by taking few laughs at your boss 😈</h2>
             <section className='section-center'>
                 <form className='m-12 items-center flex justify-center' onSubmit={handleSubmit}>

@@ -3,7 +3,7 @@ import React from 'react'
 const Skills = () => {
   return (
     <>
-      <h1 className='flex justify-center text-4xl font-semibold mb-2'>Upskill Yourself</h1>
+      <h1 className='flex justify-center text-4xl font-semibold mt-8 mb-2'>Upskill Yourself</h1>
       <h2 className='flex justify-center text-xl'>The free time at work can be used to learn new things and to upgrade your skill set and to keep yourself ahead of others</h2>
       <div className='flex mx-8 items-center'>
         <div className='w-[50%]'>

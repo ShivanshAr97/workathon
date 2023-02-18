@@ -3,7 +3,7 @@ import React from 'react'
 const Music = () => {
   return (
     <>
-      <h1 className='flex justify-center text-4xl font-semibold mb-2'>Music</h1>
+      <h1 className='flex justify-center text-4xl font-semibold mt-8 mb-2'>Music</h1>
       <h2 className='flex justify-center text-xl'>Soothe your nerves from the work stress sing the stress out</h2>
       <div className='flex justify-center'>
         <div className='ml-6 mr-2 my-8'><iframe width="590" height="360" src="https://open.spotify.com/embed/album/2sLy2qd4DMAQwQbnCJ0qCW?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

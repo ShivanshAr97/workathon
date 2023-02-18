@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Route, Routes } from 'react-router-dom';
+
 import Games from './components/Games';
 import data from './components/data';
 import Jokes from './components/Jokes';
@@ -12,13 +14,15 @@ function App() {
   const [people, setPeople] = useState([data])
   return (
     <>
-    <Navbar/>
-    <Main/>
-    {/* <Jokes people={people}/> */}
-    {/* <Games/> */}
-    {/* <Music/> */}
-    {/* <Skills/> */}
-    {/* <Celebrations/>  */}
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/jokes' element={<Jokes people={people}/>} />
+        <Route path='/games' element={<Games />} />
+        <Route path='/music' element={<Music />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/celebration' element={<Celebrations />} />
+      </Routes>
     </>
   );
 }

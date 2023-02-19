@@ -3,8 +3,8 @@ import { HiOutlineCake } from 'react-icons/hi';
 
 const Birthday = () => {
     return (
-        <div className='mx-2'>
-        <h1 className='flex text-3xl font-semibold mt-2'>Birthday</h1>
+        <div className='mx-4'>
+        <h1 className='flex text-3xl font-semibold mt-4'>Birthday</h1>
             <h3 className='flex text-xl'>Send your fellow employees birthday wishes</h3>
             <div className='flex mt-2'>
                 <div className='flex'>

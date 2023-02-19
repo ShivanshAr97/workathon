@@ -3,8 +3,8 @@ import { MdOutlineCelebration } from 'react-icons/md';
 
 const Congratulate = () => {
     return (
-        <div className='mx-2'>
-        <h1 className='flex text-3xl font-semibold mt-2'>Congratulations</h1>
+        <div className='mx-4'>
+        <h1 className='flex text-3xl font-semibold mt-6'>Congratulations</h1>
             <h3 className='flex text-xl'>Congratulate your fellow workers on promotions as well as joining your company.</h3>
             <div className='flex mt-2'>
                 <div className='flex items-center '>
